@@ -103,7 +103,7 @@
 	        _this.webgiel.render();
 	      };
 
-	      image.src = '/static/bg.jpg';
+	      image.src = 'static/bg.jpg';
 	    }
 	  }]);
 
