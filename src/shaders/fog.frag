@@ -30,15 +30,9 @@ void main(void) {
     total += noise(pos * frequency) * amplitude;
   }
 
-  total *= amount / adjust;
   total = (total + 1.0) / 2.0;
-
-  //blue.a -= u_time * 0.16;
-  // if (u_time > 5.0) {
-  //   white -= (u_time - 3.0) * 0.1;
-  // }
-
   slope = max(0.2, 2.3 - ((u_time) * 0.2));
-  vec4 color = mix(blue, white, total);
+
+  vec4 color = mix(blue, white, clamp(total, 0.0, 1.0));
   gl_FragColor = color * ease(slope);
 }
