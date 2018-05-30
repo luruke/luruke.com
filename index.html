@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>Luigi De Rosa | @luruke</title>
-    <meta name="description" content="Luigi De Rosa | Front-End Developer">
-    <meta name="keywords" content="Luigi De Rosa, luruke, front-end, javascript, html, css, developer">
-    <link rel="stylesheet" href="dist/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Lalezar" rel="stylesheet">
+    <meta name="description" content="Luigi De Rosa | Creative Developer">
+    <meta name="keywords" content="Luigi De Rosa, luruke, front-end, javascript, html, css, developer, italy, webgl, creatve, code">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/main-bded17643f.min.css">
 
     <meta property="og:url" content="http://luruke.com/index.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Luigi De Rosa | @luruke">
     <meta property="og:image" content="http://luruke.com/static/share-fb.jpg">
-    <meta property="og:description" content="Senior Front-End Developer">
+    <meta property="og:description" content="Creative Developer">
     <meta property="og:site_name" content="luruke">
     <meta property="og:locale" content="en_US">
     <meta property="article:author" content="Luigi De Rosa">
@@ -23,7 +24,7 @@
     <meta name="twitter:creator" content="@luruke">
     <meta name="twitter:url" content="http://luruke.com/index.html">
     <meta name="twitter:title" content="Luigi De Rosa | @luruke">
-    <meta name="twitter:description" content="Senior Front-End Developer">
+    <meta name="twitter:description" content="Creative Developer">
     <meta name="twitter:image" content="http://luruke.com/static/share-fb.jpg">
 
     <link rel="apple-touch-icon" sizes="57x57" href="static/favicons/apple-icon-57x57.png">
@@ -40,34 +41,54 @@
     <link rel="icon" type="image/png" sizes="96x96" href="static/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#000000">
+
+    <style>
+      .me {
+        font-size: 10px;
+        position: fixed;
+        bottom: 20px;
+        color: #969696;
+        user-select: none;
+        left: 20px;
+        z-index: 100;
+        cursor: default;
+      }
+
+      .me ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
+
+      .me li {
+        margin-right: 10px;
+      }
+
+      .me a {
+        color: inherit;
+      }
+    </style>
   </head>
   <body>
-    <canvas class="bg-canvas"></canvas>
-    <main>
-      <div class="text">
-        <h1>Luigi De Rosa</h1>
-        <p>Senior Front-End Developer at <a href="http://epic.net" target="_blank">EPIC Agency</a>.<br>Creative development, animations, JavaScript and performance.</p>
+    <canvas id="world"></canvas>
+    <div class="text-container">
+      <p class="p1">We change, we adapt, we mutate.</p>
+      <p class="p2">PUSH PUSH PUSH PUSH PUSH PUSH</p>
+    </div>
 
-        <ul>
-          <li><a href="https://twitter.com/luruke" target="_blank">Twitter</a></li>
-          <li><a href="https://github.com/luruke" target="_blank">GitHub</a></li>
-          <li><a href="mailto:lurukee@gmail.com">Mail</a></li>
-        </ul>
-      </div>
-    </main>
-    <canvas class="fog-canvas"></canvas>
+    <div class="me">
+      <h1>Luigi De Rosa</h1>
+      <span>Creative Developer at <a href="http://epic.net" target="_blank">EPIC Agency</a>.<br>WebGL, animations, JavaScript and performance.</span>
 
-    <script src="dist/js/bundle.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      <ul>
+        <li><a href="https://twitter.com/luruke" target="_blank">Twitter</a></li>
+        <li><a href="https://github.com/luruke" target="_blank">GitHub</a></li>
+        <li><a href="mailto:lurukee@gmail.com">Mail</a></li>
+      </ul>
+    </div>
 
-      ga('create', 'UA-79559567-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="assets/scripts/main-bf9b0c0743.min.js"></script>
   </body>
 </html>
